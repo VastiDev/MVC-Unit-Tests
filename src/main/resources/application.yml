@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /mvc-unit-test/api
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mvctestesDatabase?useSSL=false&serverTimezone=UTC
+    username: mysqlexchange123
+    password: mysqlexchange123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        id:
+          new_generator_mappings: true
+
